@@ -7,7 +7,6 @@ const FeedbackStats = ({feedback}) => {
         return acc+cur.rating / feedback.length
     },0)
     average=average.toFixed(1).replace(/[.,]0$/, '')
-    console.log(average);
     return (
         <div className='feedback-stats'>
             <h4>{feedback.length} Review</h4>
